@@ -1,0 +1,88 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use "sass:color";
+
+/* --- Este scss es generico para todos los cursos --- */
+.curso-main {
+  background-color: $color-fondo;
+  font-family: $font-primary;
+  padding: 1rem;
+
+  section {
+    max-width: 37.5rem;
+    margin: 0 auto 2rem auto;
+    background-color: $color-white;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+
+    h1 {
+      font-family: $font-secondary;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      span {
+        display: block; 
+        color: $primary-color;
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: 0.625rem;
+      margin: 0 auto 1rem auto;
+      display: block;
+    }
+
+    .course-intro {
+      text-align: center;
+      margin-bottom: 1.5rem;
+
+      p {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+        color: $color-text;
+      }
+    }
+
+    .course-benefits {
+      h2 {
+        font-family: $font-secondary;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+        color: $color-text;
+
+        strong {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .course-action {
+      text-align: center;
+      margin-top: 1.5rem;
+
+      a {
+        background-color: $primary-color;
+        color: $color-white;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}

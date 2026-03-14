@@ -1,0 +1,25 @@
+@use "sass:color";
+
+/* --- breakpoints --- */
+$bp-tablet: 48rem;       // 768px
+$bp-laptop: 64rem;       // 1024px
+$bp-desktop: 90rem;      // 1440px
+
+/* --- colores --- */
+$primary-color: #33CFFF;
+$primary-color-hover: color.adjust($primary-color, $lightness: -10%);
+$color-fondo: #f9f9f9;
+$color-white: #fff;
+$color-text: #333;
+$color-nav: #f0f0f0;
+$color-secondary: #555555;
+$color-textarea: #ccc;
+$secondary-button-bg: #eaeaea;
+$secondary-button-hover: #dcdcdc;
+$color-input-bg: #f5f5f5;
+$color-input-border: #dcdcdc;
+$textarea-bg: #f5f5f5;
+
+/* --- tipografía --- */
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Poppins', sans-serif;

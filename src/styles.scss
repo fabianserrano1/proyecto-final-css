@@ -1,0 +1,27 @@
+@use './variables' as *;
+@use './mixins' as *;
+@use'./header' as *;
+@use './footer' as *;
+@use './home' as *;
+@use './nosotros' as *;
+@use './cursos' as *;
+@use './blog' as *; 
+@use './registro' as *;
+@use './login' as *;
+@use './contacto' as *;
+@use './curso' as *;
+@use './estilos-art-blog' as *;
+
+@use './estilos-legales' as *;
+
+
+/* --- reset --- */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth;
+}

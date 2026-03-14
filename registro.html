@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Academia Conquerblock</title>
+    <meta name="description" content="registrate para los cursos">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+</head>
+<body>
+      
+<header class="site-header">
+  <div class="site-header__container">
+
+    
+    <a href="index.html" class="site-header__logo">
+      <img src="img/comun/Conquer-Blocks-logo.png" alt="Conquer Blocks">
+    </a>
+
+    <input 
+      type="checkbox" 
+      id="menu-toggle" 
+      class="site-header__toggle"
+      aria-label="Abrir menú"
+    >
+  
+    <label for="menu-toggle" class="site-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+  
+    <nav class="site-header__nav">
+      <ul class="site-header__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes_somos.html">Quiénes somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="registro.html" class="active">Registro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main class="registro-page container">
+
+  <section class="registro-intro">
+    <h1 class="registro-intro__title">
+      Da el siguiente paso en tu carrera tecnológica con <span>Conquer Blocks</span>
+    </h1>
+    <p class="registro-intro__subtitle">
+      Regístrate ahora y accede a nuestros cursos exclusivos, diseñados para potenciar tus habilidades y abrir nuevas oportunidades profesionales.
+    </p>
+  </section>
+
+<div class="registro-card">  
+<form class="registro-form" action="#" method="post" enctype="multipart/form-data">
+
+<p class="form-info">
+Los campos marcados con <strong>*</strong> son obligatorios
+</p>
+
+<div class="form-group">
+<label for="nombre">Tu nombre completo *</label>
+<input
+type="text"
+name="nombre"
+id="nombre"
+placeholder="Ej. Juan Pérez"
+required
+minlength="3">
+</div>
+
+
+<div class="form-group">
+<label for="birthday">Fecha de nacimiento *</label>
+<input
+type="date"
+name="birthday"
+id="birthday"
+lang="es"
+required>
+</div>
+
+
+<div class="form-group">
+<label for="telefono">Teléfono *</label>
+
+<div class="telefono-group">
+
+<select name="prefijo" id="prefijo">
+<option value="+34">🇪🇸 +34</option>
+<option value="+33">🇫🇷 +33</option>
+<option value="+49">🇩🇪 +49</option>
+<option value="+44">🇬🇧 +44</option>
+<option value="+39">🇮🇹 +39</option>
+<option value="+1">🇺🇸 +1</option>
+</select>
+
+<input
+type="tel"
+name="telefono"
+id="telefono"
+placeholder="600123456"
+pattern="[0-9]{6,15}"
+required>
+
+</div>
+</div>
+
+
+<div class="form-group">
+<label for="email">E-mail *</label>
+
+<input
+type="email"
+name="email"
+id="email"
+placeholder="ejemplo@correo.com"
+required>
+
+</div>
+
+
+<div class="form-group">
+<label for="direccion">Dirección</label>
+
+<input
+type="text"
+name="direccion"
+id="direccion"
+placeholder="Calle, Ciudad, País">
+
+</div>
+
+
+<div class="form-group form-file">
+
+<label for="documentacion" class="file-label">
+Sube tu documentación (opcional)
+</label>
+
+<input
+type="file"
+name="documentacion"
+id="documentacion"
+class="file-input"
+accept=".pdf,.jpg,.png">
+
+<span class="file-text">Ningún archivo seleccionado</span>
+
+</div>
+
+
+<div class="form-group form-file">
+
+<label for="foto" class="file-label">
+Sube tu foto de perfil (opcional)
+</label>
+
+<input
+type="file"
+name="foto"
+id="foto"
+class="file-input"
+accept="image/*">
+
+<span class="file-text">Ningún archivo seleccionado</span>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="biografia">Cuéntanos sobre ti</label>
+
+<textarea
+name="biografia"
+id="biografia"
+rows="6"
+placeholder="Tus intereses, experiencia y objetivos...">
+</textarea>
+
+</div>
+
+
+<div class="form-group form-checkbox">
+
+<label class="checkbox-label">
+
+<input
+type="checkbox"
+name="privacidad"
+id="privacidad"
+required>
+
+<span>
+He leído y acepto la
+<a href="privacidad.html" target="_blank">
+Política de Privacidad
+</a> *
+</span>
+
+</label>
+
+</div>
+
+
+<div class="form-buttons">
+
+<button type="submit" class="btn-primary">
+Registrarme
+</button>
+
+<button type="reset" class="btn-secondary">
+Borrar formulario
+</button>
+
+</div>
+
+</form>
+</div>
+</main>
+
+    <footer class="site-footer">
+
+  <div class="site-footer__social">
+    <a href="https://www.instagram.com/conquerblocks" target="_blank" aria-label="Instagram">
+      <img src="img/comun/instagram-icon.svg" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/conquer-blocks" target="_blank" aria-label="LinkedIn">
+      <img src="img/comun/linkedin-icon.svg" alt="LinkedIn">
+    </a>
+    <a href="https://www.youtube.com/@conquerblocks" target="_blank" aria-label="YouTube">
+      <img src="img/comun/youtube-icon.svg" alt="YouTube">
+    </a>
+    <a href="https://www.facebook.com/conquerblocks" target="_blank" aria-label="Facebook">
+      <img src="img/comun/facebook-icon.svg" alt="Facebook">
+    </a>
+    <a href="https://x.com/conquerblocks" target="_blank" aria-label="X">
+      <img src="img/comun/x-icon.svg" alt="X">
+    </a>
+  </div>
+
+  
+  <div class="site-footer__legal">
+    <p>© 2026 Conquer Blocks</p>
+    <div class="legal-links">
+      <a href="aviso_legal.html">Aviso Legal</a> | 
+      <a href="privacidad.html">Política de Privacidad</a>
+    </div>
+  </div>
+
+</footer>
+    
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

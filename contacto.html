@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Academia Conquerblock</title>
+    <meta name="description" content="Contacta con nuestro equipo">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+</head>
+<body>
+    
+<header class="site-header">
+  <div class="site-header__container">
+
+    <a href="index.html" class="site-header__logo">
+      <img src="img/comun/Conquer-Blocks-logo.png" alt="Conquer Blocks">
+    </a>
+
+    <input 
+      type="checkbox" 
+      id="menu-toggle" 
+      class="site-header__toggle"
+      aria-label="Abrir menú"
+    >
+
+    <label for="menu-toggle" class="site-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="site-header__nav">
+      <ul class="site-header__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes_somos.html">Quiénes somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main class="contacto-page">
+
+  <section class="contacto-intro">
+    <h1 class="contacto-intro__title">
+      Contacta con nosotros en
+      <span>Conquer Blocks</span>
+    </h1>
+
+    <p class="contacto-intro__subtitle">
+      ¿Tienes dudas sobre nuestros cursos o servicios? Escríbenos y te responderemos lo antes posible.
+    </p>
+  </section>
+
+
+  <div class="contacto-card">
+
+    <form class="contacto-form" action="#" method="get">
+
+      <div class="form-group">
+        <label for="nombre">Nombre y apellidos *</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="consulta">Tu consulta</label>
+        <textarea name="consulta" id="consulta" placeholder="Escribe tu consulta aquí..." rows="6"></textarea>
+      </div>
+
+      <div class="form-checkbox">
+        <input type="checkbox" name="privacidad" id="privacidad" required>
+        <label for="privacidad">
+          Acepto la <a href="privacidad.html">política de privacidad</a> *
+        </label>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn-primary">Enviar</button>
+        <input type="reset" class="btn-secondary" value="Borrar">
+      </div>
+
+    </form>
+
+  </div>
+
+
+  <section class="contacto-map">
+    <h2>Nos puedes encontrar aquí</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2642755750776!2d-3.6851830905490677!3d40.425146671319155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229033b15070f%3A0x64465e7bf96ccc7d!2sAcademia%20Conquer!5e0!3m2!1ses!2ses!4v1733836874320!5m2!1ses!2ses" 
+            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+</main>   
+    
+
+<footer class="site-footer">
+
+  <div class="site-footer__social">
+    <a href="https://www.instagram.com/conquerblocks" target="_blank" aria-label="Instagram">
+      <img src="img/comun/instagram-icon.svg" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/conquer-blocks" target="_blank" aria-label="LinkedIn">
+      <img src="img/comun/linkedin-icon.svg" alt="LinkedIn">
+    </a>
+    <a href="https://www.youtube.com/@conquerblocks" target="_blank" aria-label="YouTube">
+      <img src="img/comun/youtube-icon.svg" alt="YouTube">
+    </a>
+    <a href="https://www.facebook.com/conquerblocks" target="_blank" aria-label="Facebook">
+      <img src="img/comun/facebook-icon.svg" alt="Facebook">
+    </a>
+    <a href="https://x.com/conquerblocks" target="_blank" aria-label="X">
+      <img src="img/comun/x-icon.svg" alt="X">
+    </a>
+  </div>
+
+
+  <div class="site-footer__legal">
+    <p>© 2026 Conquer Blocks</p>
+    <div class="legal-links">
+      <a href="aviso_legal.html">Aviso Legal</a> | 
+      <a href="privacidad.html">Política de Privacidad</a>
+    </div>
+  </div>
+
+</footer>
+
+    <script type="module" src="/src/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use "sass:color";
+
+.registro-page {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: $color-fondo;
+  border-radius: 0.75rem;
+}
+
+.registro-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.registro-intro__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  span {
+    color: $primary-color;
+    display: block;
+  }
+}
+
+.registro-intro__subtitle {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: $color-text;
+}
+
+.registro-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.16);
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-info {
+  font-size: 0.9rem;
+  color: $color-text;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid $color-input-border;
+    font-size: 1rem;
+    font-family: $font-secondary;
+    background-color: $textarea-bg;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.125rem rgba(51,207,255,0.15);
+    outline: none;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 7.5rem;
+  }
+}
+
+.telefono-group {
+  display: flex;
+  gap: 0.5rem;
+
+  select {
+    width: 5.625rem;
+  }
+
+  input {
+    flex: 1;
+  }
+}
+
+.form-file {
+  position: relative;
+
+  .file-input {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  .file-label {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.15s;
+  }
+
+  &:hover .file-label {
+    background-color: $primary-color-hover;
+    transform: translateY(-0.125rem);
+  }
+
+  .file-label:active {
+    transform: translateY(0);
+  }
+
+  .file-text {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: $color-text;
+  }
+}
+
+.form-checkbox {
+  .checkbox-label {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    margin-top: 0.1875rem;
+    cursor: pointer;
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn-primary {
+  padding: 0.9rem;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background-color: $primary-color-hover;
+  transform: translateY(-0.125rem);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  padding: 0.9rem;
+  background-color: $secondary-button-bg;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.15s;
+}
+
+.btn-secondary:hover {
+  background-color: $secondary-button-hover;
+  transform: translateY(-0.125rem);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
